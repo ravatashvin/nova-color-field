@@ -47,13 +47,11 @@
 </template>
 
 <script>
-import { DependentFormField, HandlesValidationErrors } from 'laravel-nova';
 import { Chrome, Compact, Grayscale, Material, Photoshop, Sketch, Slider, Swatches, Twitter } from '@ckpack/vue-color';
 import tinycolor from 'tinycolor2';
 
 export default {
   name: 'NovaColorField',
-  mixins: [HandlesValidationErrors, DependentFormField],
 
   components: {
     'chrome-picker': Chrome,
